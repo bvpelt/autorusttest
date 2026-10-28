@@ -32,7 +32,7 @@ jobs:
         uses: taiki-e/install-action@cargo-llvm-cov
 
       - name: Install cargo-llvm-cov
-        run: cargo install cargo-llvm-cov --locked
+        run: cargo install cargo-llvm-cov --locked --forced
 
       - name: Cache Cargo
         uses: actions/cache@v4
