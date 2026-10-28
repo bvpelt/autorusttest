@@ -1,6 +1,6 @@
-//! # ex20
+//! # autorusttest
 //!
-//! `ex20` is a collection of utilities to make performing certain
+//! `autorusttest` is a collection of utilities to make performing certain
 //! calculations more convenient.
 
 /// Adds one to the number given.
@@ -9,7 +9,7 @@
 ///
 /// ```
 /// let arg = 5;
-/// let answer = ex20::add_one(arg);
+/// let answer = autorusttest::add_one(arg);
 ///
 /// assert_eq!(6, answer);
 /// ```
@@ -22,7 +22,7 @@ pub fn add_one(x: i32) -> i32 {
 ///
 /// ```
 /// let arg = 5;
-/// let answer = ex20::add_two(arg);
+/// let answer = autorusttest::add_two(arg);
 ///
 /// assert_eq!(7, answer);
 /// ```
@@ -74,20 +74,20 @@ pub mod utils {
     /// # Examples
     ///
     /// ```
-    /// let primary_color1 = ex20::kinds::PrimaryColor::Red;
-    /// let primary_color2 = ex20::kinds::PrimaryColor::Yellow;
-    /// let answer = ex20::utils::mix(primary_color1, primary_color2);
+    /// let primary_color1 = autorusttest::kinds::PrimaryColor::Red;
+    /// let primary_color2 = autorusttest::kinds::PrimaryColor::Yellow;
+    /// let answer = autorusttest::utils::mix(primary_color1, primary_color2);
     ///
-    /// assert_eq!(ex20::kinds::SecondaryColor::Orange, answer);
+    /// assert_eq!(autorusttest::kinds::SecondaryColor::Orange, answer);
     /// ```
     ///
     /// using the re-exported names:
     /// ```
-    /// let primary_color3 = ex20::PrimaryColor::Red;
-    /// let primary_color4 = ex20::PrimaryColor::Blue;
-    /// let answer = ex20::mix(primary_color3, primary_color4);
+    /// let primary_color3 = autorusttest::PrimaryColor::Red;
+    /// let primary_color4 = autorusttest::PrimaryColor::Blue;
+    /// let answer = autorusttest::mix(primary_color3, primary_color4);
     ///
-    /// assert_eq!(ex20::SecondaryColor::Purple, answer);
+    /// assert_eq!(autorusttest::SecondaryColor::Purple, answer);
     /// ```
     pub fn mix(c1: PrimaryColor, c2: PrimaryColor) -> SecondaryColor {
         match (c1, c2) {
